@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ifsIqCS4cG58LVotiWOTv5N5mbfBDcsWud91deq7zWqBSjNtl5oaoaz4U6+DD5T1eM5yCse0uMfg9mW6Uih6HQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Rasa\\ApiGateway\\ApiGateway\\ApiGateway.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RPTD\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
