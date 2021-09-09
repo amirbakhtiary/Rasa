@@ -103,11 +103,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Rasa\\ApiGateway\\ApiGateway\\ApiGateway.csproj",
+      "projectUniqueName": "D:\\Projects\\Rasa\\src\\ApiGateway\\ApiGateway.csproj",
       "projectName": "ApiGateway",
-      "projectPath": "D:\\Projects\\Rasa\\ApiGateway\\ApiGateway\\ApiGateway.csproj",
+      "projectPath": "D:\\Projects\\Rasa\\src\\ApiGateway\\ApiGateway.csproj",
       "packagesPath": "C:\\Users\\RPTD\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Rasa\\ApiGateway\\ApiGateway\\obj\\",
+      "outputPath": "D:\\Projects\\Rasa\\src\\ApiGateway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RPTD\\AppData\\Roaming\\NuGet\\NuGet.Config",
