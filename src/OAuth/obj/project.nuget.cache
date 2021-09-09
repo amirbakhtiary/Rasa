@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tjRCSDdzxMBsHifBla6TmdKnpp3TQ3BCb6WWoBw8lbzxYiopFWtzrGsXLSdPZgrW/eu4kJfoOFetodbq9Bvftw==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Rasa\\src\\OAuth\\IdentityServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RPTD\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
