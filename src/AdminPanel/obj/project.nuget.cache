@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qbMwiiRNAY5aqisXvChrHTis1Hyn7eerUNOxraVXDOZVkjMCje2/nHCuuvBbTRl2+dRWTTe/+Lkhj1RkXjGszQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Rasa\\src\\AdminPanel\\AdminPanel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RPTD\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
