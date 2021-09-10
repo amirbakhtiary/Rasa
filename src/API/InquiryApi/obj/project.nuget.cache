@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NoBWi6hWmaxk9KsV4ezTIGtZUyxvAKq4BRhJnonf7HO80zjwbEP2DDyVqLTgbzrsaXj83KfrEsfxkhCrSgcsFQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Rasa\\src\\API\\InquiryApi\\InquiryApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RPTD\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
