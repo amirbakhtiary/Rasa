@@ -25,9 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminPanel", "src\AdminPane
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "src\OAuth\IdentityServer.csproj", "{19DA9194-61A7-4DEC-BDE3-0A76E1A463B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardApi", "src\API\CardApi\CardApi.csproj", "{39C8FF2E-1BCA-43C1-BA08-4FE4015594C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardApi", "src\API\CardApi\CardApi.csproj", "{39C8FF2E-1BCA-43C1-BA08-4FE4015594C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InquiryApi", "src\API\InquiryApi\InquiryApi.csproj", "{A0412F8C-860C-4ACF-A32D-36077AB3AE89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InquiryApi", "src\API\InquiryApi\InquiryApi.csproj", "{A0412F8C-860C-4ACF-A32D-36077AB3AE89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "src\Client\Web\Web.csproj", "{4CD84BF5-385A-42F6-A79D-06CFAED3F2A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{A0412F8C-860C-4ACF-A32D-36077AB3AE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0412F8C-860C-4ACF-A32D-36077AB3AE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0412F8C-860C-4ACF-A32D-36077AB3AE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD84BF5-385A-42F6-A79D-06CFAED3F2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD84BF5-385A-42F6-A79D-06CFAED3F2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD84BF5-385A-42F6-A79D-06CFAED3F2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD84BF5-385A-42F6-A79D-06CFAED3F2A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{19DA9194-61A7-4DEC-BDE3-0A76E1A463B4} = {3A080833-1DCF-4D0D-87A8-30F1CE48A8F2}
 		{39C8FF2E-1BCA-43C1-BA08-4FE4015594C8} = {D77A0A28-68C2-4BB4-A8FC-21B52888D66A}
 		{A0412F8C-860C-4ACF-A32D-36077AB3AE89} = {D77A0A28-68C2-4BB4-A8FC-21B52888D66A}
+		{4CD84BF5-385A-42F6-A79D-06CFAED3F2A4} = {B302E0D2-DA96-4FBE-994C-70FDE1D981B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D018CB9-FC12-4E6A-9F01-098999723633}
