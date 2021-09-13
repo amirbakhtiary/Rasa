@@ -1,4 +1,4 @@
-﻿using IdentityModel;
+using IdentityModel;
 using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;
@@ -17,28 +17,28 @@ namespace IdentityServer
             {
                    new Client
                    {
-                        ClientId = "rasaClient",
+                        ClientId = "cardClient",
                         AllowedGrantTypes = GrantTypes.ClientCredentials,
                         ClientSecrets =
                         {
                             new Secret("secret".Sha256())
                         },
-                        AllowedScopes = { "rasaAPI" }
+                        AllowedScopes = { "cardAPI" }
                    },
                    new Client
                    {
-                       ClientId = "rasa_mvc_client",
-                       ClientName = "Rasa MVC Web App",
+                       ClientId = "cards_mvc_client",
+                       ClientName = "Card MVC Web App",
                        AllowedGrantTypes = GrantTypes.Hybrid,
                        RequirePkce = false,
                        AllowRememberConsent = false,
                        RedirectUris = new List<string>()
                        {
-                           "https://localhost:5002/signin-oidc"
+                           "https://localhost:44334/signin-oidc"
                        },
                        PostLogoutRedirectUris = new List<string>()
                        {
-                           "https://localhost:5002/signout-callback-oidc"
+                           "https://localhost:44334/signout-callback-oidc"
                        },
                        ClientSecrets = new List<Secret>
                        {
@@ -50,7 +50,7 @@ namespace IdentityServer
                            IdentityServerConstants.StandardScopes.Profile,
                            IdentityServerConstants.StandardScopes.Address,
                            IdentityServerConstants.StandardScopes.Email,
-                           "rasaAPI",
+                           "cardAPI",
                            "roles"
                        }
                    }
@@ -59,13 +59,13 @@ namespace IdentityServer
         public static IEnumerable<ApiScope> ApiScopes =>
            new ApiScope[]
            {
-               new ApiScope("rasaAPI", "Rasa API")
+               new ApiScope("cardAPI", "Card API")
            };
 
         public static IEnumerable<ApiResource> ApiResources =>
           new ApiResource[]
           {
-               //new ApiResource("rasaAPI", "Rasa API")
+               //new ApiResource("cardAPI", "Card API")
           };
 
         public static IEnumerable<IdentityResource> IdentityResources =>
