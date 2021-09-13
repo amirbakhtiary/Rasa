@@ -43,7 +43,7 @@ namespace Web
 
             services.AddHttpClient("CardAPIClient", client =>
             {
-                client.BaseAddress = new Uri("https://localhost:5004/"); // API GATEWAY URL
+                client.BaseAddress = new Uri("https://localhost:44333/api/"); // API GATEWAY URL
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
             }).AddHttpMessageHandler<AuthenticationDelegatingHandler>();
@@ -52,7 +52,7 @@ namespace Web
             // 2 create an HttpClient used for accessing the IDP
             services.AddHttpClient("IDPClient", client =>
             {
-                client.BaseAddress = new Uri("https://localhost:5005/");
+                client.BaseAddress = new Uri("https://localhost:44332/");
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
             });
@@ -61,7 +61,7 @@ namespace Web
 
             //services.AddSingleton(new ClientCredentialsTokenRequest
             //{                                                
-            //    Address = "https://localhost:5005/connect/token",
+            //    Address = "https://localhost:44332/connect/token",
             //    ClientId = "cardClient",
             //    ClientSecret = "secret",
             //    Scope = "cardAPI"
@@ -78,7 +78,7 @@ namespace Web
                 .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
                 {
-                    options.Authority = "https://localhost:5005";
+                    options.Authority = "https://localhost:44332";
 
                     options.ClientId = "cards_mvc_client";
                     options.ClientSecret = "secret";

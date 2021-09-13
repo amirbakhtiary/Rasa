@@ -28,7 +28,7 @@ namespace CardApi
             services.AddAuthentication("Bearer")
                     .AddJwtBearer("Bearer", options =>
                     {
-                        options.Authority = "https://localhost:44303";
+                        options.Authority = "https://localhost:44332";
                         options.TokenValidationParameters = new TokenValidationParameters
                         {
                             ValidateAudience = false
@@ -37,7 +37,7 @@ namespace CardApi
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("ClientIdPolicy", policy => policy.RequireClaim("client_id", "rasaClient", "rasa_mvc_client"));
+                options.AddPolicy("ClientIdPolicy", policy => policy.RequireClaim("client_id", "cardClient", "cards_mvc_client"));
             });
         }
 
