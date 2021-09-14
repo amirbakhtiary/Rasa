@@ -43,7 +43,7 @@ namespace Web
 
             services.AddHttpClient("CardAPIClient", client =>
             {
-                client.BaseAddress = new Uri("https://localhost:44333/api/"); // API GATEWAY URL
+                client.BaseAddress = new Uri("https://localhost:44333/"); // API GATEWAY URL
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
             }).AddHttpMessageHandler<AuthenticationDelegatingHandler>();
