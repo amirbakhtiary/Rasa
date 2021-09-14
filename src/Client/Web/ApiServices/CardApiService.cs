@@ -31,7 +31,7 @@ namespace Web.ApiServices
 
             var request = new HttpRequestMessage(
                 HttpMethod.Get,
-                "/cards");
+                "/api/cards");
 
             var response = await httpClient.SendAsync(
                 request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
