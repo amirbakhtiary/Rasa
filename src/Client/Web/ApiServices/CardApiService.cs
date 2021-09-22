@@ -1,4 +1,4 @@
-﻿using IdentityModel.Client;
+using IdentityModel.Client;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
@@ -31,7 +31,7 @@ namespace Web.ApiServices
 
             var request = new HttpRequestMessage(
                 HttpMethod.Get,
-                "/api/cards");
+                "api/cards");
 
             var response = await httpClient.SendAsync(
                 request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
@@ -92,7 +92,7 @@ namespace Web.ApiServices
 
         }
 
-        public Task<Card> GetCard(string id)
+        public Task<Card> GetCard(int id)
         {
             throw new NotImplementedException();
         }
