@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Authorization;
@@ -53,21 +53,21 @@ namespace Web.Controllers
         // GET: Cards/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            return View();
+            //return View();
 
-            //if (id == null)
-            //{
-            //    return NotFound();
-            //}
+            if (!id.HasValue)
+            {
+                return NotFound();
+            }
 
-            //var card = await _context.Card
-            //    .FirstOrDefaultAsync(m => m.Id == id);
-            //if (card == null)
-            //{
-            //    return NotFound();
-            //}
+            var card = await _cardApiService.GetCard(id.Value);
 
-            //return View(card);
+            if (card == null)
+            {
+                return NotFound();
+            }
+
+            return View(card);
         }
 
         // GET: Cards/Create
